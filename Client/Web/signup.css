@@ -1,0 +1,114 @@
+/* 기본 스타일 설정 */
+body {
+    font-family: 'Dosis' , sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.background {
+    position: absolute; /* 절대 위치로 설정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("file:///C:/Users/PC/Desktop/Client/Web/img/background_4.jpg"); /* 이미지 경로 확인 */
+    background-size: cover; /* 이미지가 전체 배경을 덮도록 설정 */
+    background-position: center; /* 이미지 중앙 정렬 */
+    z-index: -1; /* 배경이 다른 요소 뒤에 위치하도록 설정 */
+}
+
+.container {
+    font-family: 'Dosis' , sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 90px;
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    color: #333;
+}
+
+/* 테이블 스타일 */
+table {
+    font-family: 'Dosis' , sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto; /* 테이블을 가운데 정렬 */
+}
+
+th {
+    text-align: left;
+    padding: 20px;
+    color: #555;
+}
+
+td {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle; /* 테이블 셀 내에서 수직 정렬 */
+}
+
+tr:nth-child(5) td {
+    border: none;
+}
+
+.input-group {
+    display: flex;
+    align-items: center; /* 세로 정렬을 가운데로 */
+    white-space: nowrap; /* 줄 바꿈 방지 */
+}
+
+.input-group input {
+    flex: 1;
+    height: 0px; /* 입력란의 높이 설정 */
+    padding: 8px 5px; /* 상단 패딩을 조정하여 글자를 올리기 */
+    line-height: normal; /* 라인 높이를 기본값으로 설정 */
+    margin-right: 5px; /* 입력란 사이에 여백 추가 */
+}
+
+.input-group span {
+    margin: 0 13px; /* @ 및 - 사이에 여백 추가 */
+    align-self: center; /* 수직 정렬 */
+}
+
+/* 버튼 스타일 */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button[type="button"] {
+    background-color: #f80505;
+}
+
+button[type="button"]:hover {
+    background-color: #5a6268;
+}
